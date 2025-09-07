@@ -1,0 +1,17 @@
+LICENSE
+package.xml
+setup.cfg
+setup.py
+../../build/my_ci_demo/my_ci_demo.egg-info/PKG-INFO
+../../build/my_ci_demo/my_ci_demo.egg-info/SOURCES.txt
+../../build/my_ci_demo/my_ci_demo.egg-info/dependency_links.txt
+../../build/my_ci_demo/my_ci_demo.egg-info/requires.txt
+../../build/my_ci_demo/my_ci_demo.egg-info/top_level.txt
+../../build/my_ci_demo/my_ci_demo.egg-info/zip-safe
+my_ci_demo/__init__.py
+my_ci_demo/math_utils.py
+resource/my_ci_demo
+test/test_copyright.py
+test/test_flake8.py
+test/test_math_utils.py
+test/test_pep257.py

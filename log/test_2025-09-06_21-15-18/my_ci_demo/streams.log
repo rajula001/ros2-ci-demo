@@ -1,0 +1,53 @@
+[0.143s] Invoking command in '/home/ajith/ros2-ci-demo/src/my_ci_demo': AMENT_PREFIX_PATH=/home/ajith/ros2-ci-demo/install/my_ci_demo:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/ajith/ros2-ci-demo/build/my_ci_demo/pytest.xml --junit-prefix=my_ci_demo -o cache_dir=/home/ajith/ros2-ci-demo/build/my_ci_demo/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/ajith/ros2-ci-demo/install/my_ci_demo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[0.335s] [1m============================= test session starts ==============================[0m
+[0.335s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.336s] cachedir: /home/ajith/ros2-ci-demo/build/my_ci_demo/.pytest_cache
+[0.336s] rootdir: /home/ajith/ros2-ci-demo/src/my_ci_demo
+[0.336s] plugins: launch-testing-ros-0.26.8, ament-pep257-0.17.3, ament-flake8-0.17.3, launch-testing-3.4.6, ament-copyright-0.17.3, ament-lint-0.17.3, ament-xmllint-0.17.3, cov-4.1.0, colcon-core-0.20.0
+[0.396s] [1mcollecting ... [0m[1m
+[0.396s] collected 6 items                                                              [0m
+[0.396s] 
+[0.400s] test/test_copyright.py [33ms[0m[32m                                                 [ 16%][0m
+[0.659s] test/test_flake8.py [31mF[0m[31m                                                    [ 33%][0m
+[0.659s] test/test_math_utils.py [32m.[0m[32m.[0m[32m.[0m[31m                                              [ 83%][0m
+[0.662s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[0.662s] 
+[0.662s] =================================== FAILURES ===================================
+[0.662s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[0.662s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[0.690s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[0.690s] [1m[31mE   AssertionError: Found 2 code style errors / warnings:[0m
+[0.690s] [1m[31mE     ./setup.py:25:1: W391 blank line at end of file[0m
+[0.690s] [1m[31mE     ./test/test_math_utils.py:20:1: W391 blank line at end of file[0m
+[0.690s] [1m[31mE   assert 1 == 0[0m
+[0.690s] ----------------------------- Captured stdout call -----------------------------
+[0.690s] 
+[0.690s] ./setup.py:25:1: W391 blank line at end of file
+[0.690s] 
+[0.690s] ^
+[0.690s] 
+[0.690s] ./test/test_math_utils.py:20:1: W391 blank line at end of file
+[0.690s] 
+[0.690s] ^
+[0.690s] 
+[0.690s] 2     W391 blank line at end of file
+[0.690s] 
+[0.690s] 7 files checked
+[0.690s] 2 errors
+[0.691s] 
+[0.691s] 'W'-type errors: 2
+[0.691s] 
+[0.691s] Checked files:
+[0.691s] 
+[0.691s] * ./setup.py
+[0.691s] * ./my_ci_demo/math_utils.py
+[0.691s] * ./my_ci_demo/__init__.py
+[0.691s] * ./test/test_copyright.py
+[0.691s] * ./test/test_flake8.py
+[0.691s] * ./test/test_pep257.py
+[0.691s] * ./test/test_math_utils.py
+[0.691s] --- generated xml file: /home/ajith/ros2-ci-demo/build/my_ci_demo/pytest.xml ---
+[0.691s] [36m[1m=========================== short test summary info ============================[0m
+[0.691s] [31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 2 code style errors / warnings:
+[0.691s] [31m==================== [31m[1m1 failed[0m, [32m4 passed[0m, [33m1 skipped[0m[31m in 0.36s[0m[31m ====================[0m
+[0.730s] Invoked command in '/home/ajith/ros2-ci-demo/src/my_ci_demo' returned '1': AMENT_PREFIX_PATH=/home/ajith/ros2-ci-demo/install/my_ci_demo:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/ajith/ros2-ci-demo/build/my_ci_demo/pytest.xml --junit-prefix=my_ci_demo -o cache_dir=/home/ajith/ros2-ci-demo/build/my_ci_demo/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/ajith/ros2-ci-demo/install/my_ci_demo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

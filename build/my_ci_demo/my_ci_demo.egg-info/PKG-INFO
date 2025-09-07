@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: my-ci-demo
+Version: 0.0.0
+Summary: Demo Python package for ROS2 CI/CD
+Maintainer: ajith
+Maintainer-email: ajith@example.com
+License: Apache-2.0
+License-File: LICENSE

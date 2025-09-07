@@ -1,0 +1,51 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+cachedir: /home/ajith/ros2-ci-demo/build/my_ci_demo/.pytest_cache
+rootdir: /home/ajith/ros2-ci-demo/src/my_ci_demo
+plugins: launch-testing-ros-0.26.8, ament-pep257-0.17.3, ament-flake8-0.17.3, launch-testing-3.4.6, ament-copyright-0.17.3, ament-lint-0.17.3, ament-xmllint-0.17.3, cov-4.1.0, colcon-core-0.20.0
+[1mcollecting ... [0m[1m
+collected 6 items                                                              [0m
+
+test/test_copyright.py [33ms[0m[32m                                                 [ 16%][0m
+test/test_flake8.py [31mF[0m[31m                                                    [ 33%][0m
+test/test_math_utils.py [32m.[0m[32m.[0m[32m.[0m[31m                                              [ 83%][0m
+test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m_________________________________ test_flake8 __________________________________[0m
+[1m[31mtest/test_flake8.py[0m:23: in test_flake8
+    [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[1m[31mE   AssertionError: Found 2 code style errors / warnings:[0m
+[1m[31mE     ./setup.py:25:1: W391 blank line at end of file[0m
+[1m[31mE     ./test/test_math_utils.py:20:1: W391 blank line at end of file[0m
+[1m[31mE   assert 1 == 0[0m
+----------------------------- Captured stdout call -----------------------------
+
+./setup.py:25:1: W391 blank line at end of file
+
+^
+
+./test/test_math_utils.py:20:1: W391 blank line at end of file
+
+^
+
+2     W391 blank line at end of file
+
+7 files checked
+2 errors
+
+'W'-type errors: 2
+
+Checked files:
+
+* ./setup.py
+* ./my_ci_demo/math_utils.py
+* ./my_ci_demo/__init__.py
+* ./test/test_copyright.py
+* ./test/test_flake8.py
+* ./test/test_pep257.py
+* ./test/test_math_utils.py
+--- generated xml file: /home/ajith/ros2-ci-demo/build/my_ci_demo/pytest.xml ---
+[36m[1m=========================== short test summary info ============================[0m
+[31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 2 code style errors / warnings:
+[31m==================== [31m[1m1 failed[0m, [32m4 passed[0m, [33m1 skipped[0m[31m in 0.36s[0m[31m ====================[0m

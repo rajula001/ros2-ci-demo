@@ -1,0 +1,73 @@
+[0.123s] Invoking command in '/home/ajith/ros2-ci-demo/src/my_ci_demo': AMENT_PREFIX_PATH=/home/ajith/ros2-ci-demo/install/my_ci_demo:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/ajith/ros2-ci-demo/build/my_ci_demo/pytest.xml --junit-prefix=my_ci_demo -o cache_dir=/home/ajith/ros2-ci-demo/build/my_ci_demo/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/ajith/ros2-ci-demo/install/my_ci_demo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[0.384s] [1m============================= test session starts ==============================[0m
+[0.385s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.388s] cachedir: /home/ajith/ros2-ci-demo/build/my_ci_demo/.pytest_cache
+[0.388s] rootdir: /home/ajith/ros2-ci-demo/src/my_ci_demo
+[0.388s] plugins: launch-testing-ros-0.26.8, ament-pep257-0.17.3, ament-flake8-0.17.3, launch-testing-3.4.6, ament-copyright-0.17.3, ament-lint-0.17.3, ament-xmllint-0.17.3, cov-4.1.0, colcon-core-0.20.0
+[0.478s] [1mcollecting ... [0m[1m
+[0.479s] collected 6 items                                                              [0m
+[0.479s] 
+[0.483s] test/test_copyright.py [33ms[0m[32m                                                 [ 16%][0m
+[0.623s] test/test_flake8.py [31mF[0m[31m                                                    [ 33%][0m
+[0.631s] test/test_math_utils.py [32m.[0m[32m.[0m[32m.[0m[31m                                              [ 83%][0m
+[0.641s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[0.641s] 
+[0.641s] =================================== FAILURES ===================================
+[0.641s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[0.641s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[0.670s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[0.671s] [1m[31mE   AssertionError: Found 5 code style errors / warnings:[0m
+[0.671s] [1m[31mE     ./my_ci_demo/math_utils.py:4:1: W391 blank line at end of file[0m
+[0.671s] [1m[31mE     ./test/test_math_utils.py:2:1: I201 Missing newline between import groups. 'from my_ci_demo.math_utils import add' is identified as Third Party and 'import unittest' is identified as Stdlib.[0m
+[0.671s] [1m[31mE     ./test/test_math_utils.py:4:1: E302 expected 2 blank lines, found 1[0m
+[0.671s] [1m[31mE     ./test/test_math_utils.py:15:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[0.671s] [1m[31mE     ./test/test_math_utils.py:17:1: W391 blank line at end of file[0m
+[0.671s] [1m[31mE   assert 1 == 0[0m
+[0.671s] ----------------------------- Captured stdout call -----------------------------
+[0.671s] 
+[0.671s] ./my_ci_demo/math_utils.py:4:1: W391 blank line at end of file
+[0.672s] 
+[0.672s] ^
+[0.672s] 
+[0.672s] ./test/test_math_utils.py:2:1: I201 Missing newline between import groups. 'from my_ci_demo.math_utils import add' is identified as Third Party and 'import unittest' is identified as Stdlib.
+[0.672s] from my_ci_demo.math_utils import add
+[0.672s] ^
+[0.672s] 
+[0.673s] ./test/test_math_utils.py:4:1: E302 expected 2 blank lines, found 1
+[0.673s] class TestMathUtils(unittest.TestCase):
+[0.673s] ^
+[0.673s] 
+[0.673s] ./test/test_math_utils.py:15:1: E305 expected 2 blank lines after class or function definition, found 1
+[0.673s] if __name__ == '__main__':
+[0.673s] ^
+[0.673s] 
+[0.673s] ./test/test_math_utils.py:17:1: W391 blank line at end of file
+[0.673s] 
+[0.673s] ^
+[0.673s] 
+[0.673s] 1     E302 expected 2 blank lines, found 1
+[0.673s] 1     E305 expected 2 blank lines after class or function definition, found 1
+[0.673s] 1     I201 Missing newline between import groups. 'from my_ci_demo.math_utils import add' is identified as Third Party and 'import unittest' is identified as Stdlib.
+[0.673s] 2     W391 blank line at end of file
+[0.673s] 
+[0.673s] 7 files checked
+[0.673s] 5 errors
+[0.673s] 
+[0.673s] 'E'-type errors: 2
+[0.674s] 'I'-type errors: 1
+[0.674s] 'W'-type errors: 2
+[0.674s] 
+[0.674s] Checked files:
+[0.674s] 
+[0.674s] * ./setup.py
+[0.674s] * ./my_ci_demo/math_utils.py
+[0.674s] * ./my_ci_demo/__init__.py
+[0.674s] * ./test/test_copyright.py
+[0.674s] * ./test/test_flake8.py
+[0.674s] * ./test/test_pep257.py
+[0.674s] * ./test/test_math_utils.py
+[0.674s] --- generated xml file: /home/ajith/ros2-ci-demo/build/my_ci_demo/pytest.xml ---
+[0.674s] [36m[1m=========================== short test summary info ============================[0m
+[0.674s] [31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 5 code style errors / warnings:
+[0.674s] [31m==================== [31m[1m1 failed[0m, [32m4 passed[0m, [33m1 skipped[0m[31m in 0.29s[0m[31m ====================[0m
+[0.707s] Invoked command in '/home/ajith/ros2-ci-demo/src/my_ci_demo' returned '1': AMENT_PREFIX_PATH=/home/ajith/ros2-ci-demo/install/my_ci_demo:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/ajith/ros2-ci-demo/build/my_ci_demo/pytest.xml --junit-prefix=my_ci_demo -o cache_dir=/home/ajith/ros2-ci-demo/build/my_ci_demo/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/ajith/ros2-ci-demo/install/my_ci_demo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

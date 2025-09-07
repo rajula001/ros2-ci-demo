@@ -1,0 +1,17 @@
+[0.133s] Invoking command in '/home/ajith/ros2-ci-demo/src/my_ci_demo': AMENT_PREFIX_PATH=/home/ajith/ros2-ci-demo/install/my_ci_demo:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/ajith/ros2-ci-demo/build/my_ci_demo/pytest.xml --junit-prefix=my_ci_demo -o cache_dir=/home/ajith/ros2-ci-demo/build/my_ci_demo/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/ajith/ros2-ci-demo/install/my_ci_demo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[0.310s] [1m============================= test session starts ==============================[0m
+[0.310s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.313s] cachedir: /home/ajith/ros2-ci-demo/build/my_ci_demo/.pytest_cache
+[0.313s] rootdir: /home/ajith/ros2-ci-demo/src/my_ci_demo
+[0.313s] plugins: launch-testing-ros-0.26.8, ament-pep257-0.17.3, ament-flake8-0.17.3, launch-testing-3.4.6, ament-copyright-0.17.3, ament-lint-0.17.3, ament-xmllint-0.17.3, cov-4.1.0, colcon-core-0.20.0
+[0.358s] [1mcollecting ... [0m[1m
+[0.358s] collected 6 items                                                              [0m
+[0.358s] 
+[0.361s] test/test_copyright.py [33ms[0m[32m                                                 [ 16%][0m
+[0.459s] test/test_flake8.py [32m.[0m[32m                                                    [ 33%][0m
+[0.461s] test/test_math_utils.py [32m.[0m[32m.[0m[32m.[0m[32m                                              [ 83%][0m
+[0.475s] test/test_pep257.py [32m.[0m[32m                                                    [100%][0m
+[0.476s] 
+[0.476s] --- generated xml file: /home/ajith/ros2-ci-demo/build/my_ci_demo/pytest.xml ---
+[0.476s] [32m========================= [32m[1m5 passed[0m, [33m1 skipped[0m[32m in 0.17s[0m[32m =========================[0m
+[0.507s] Invoked command in '/home/ajith/ros2-ci-demo/src/my_ci_demo' returned '0': AMENT_PREFIX_PATH=/home/ajith/ros2-ci-demo/install/my_ci_demo:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/ajith/ros2-ci-demo/build/my_ci_demo/pytest.xml --junit-prefix=my_ci_demo -o cache_dir=/home/ajith/ros2-ci-demo/build/my_ci_demo/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/ajith/ros2-ci-demo/install/my_ci_demo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

@@ -1,0 +1,23 @@
+[0.420s] Invoking command in '/home/ajith/ros2-ci-demo/src/my_ci_demo': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ajith/ros2-ci-demo/build/my_ci_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ajith/ros2-ci-demo/install/my_ci_demo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_ci_demo build --build-base /home/ajith/ros2-ci-demo/build/my_ci_demo/build install --record /home/ajith/ros2-ci-demo/build/my_ci_demo/install.log --single-version-externally-managed install_data
+[0.580s] running egg_info
+[0.601s] writing ../../build/my_ci_demo/my_ci_demo.egg-info/PKG-INFO
+[0.601s] writing dependency_links to ../../build/my_ci_demo/my_ci_demo.egg-info/dependency_links.txt
+[0.601s] writing requirements to ../../build/my_ci_demo/my_ci_demo.egg-info/requires.txt
+[0.601s] writing top-level names to ../../build/my_ci_demo/my_ci_demo.egg-info/top_level.txt
+[0.613s] reading manifest file '../../build/my_ci_demo/my_ci_demo.egg-info/SOURCES.txt'
+[0.613s] adding license file 'LICENSE'
+[0.613s] writing manifest file '../../build/my_ci_demo/my_ci_demo.egg-info/SOURCES.txt'
+[0.613s] running build
+[0.613s] running build_py
+[0.613s] copying my_ci_demo/math_utils.py -> /home/ajith/ros2-ci-demo/build/my_ci_demo/build/lib/my_ci_demo
+[0.613s] running install
+[0.617s] running install_lib
+[0.629s] copying /home/ajith/ros2-ci-demo/build/my_ci_demo/build/lib/my_ci_demo/math_utils.py -> /home/ajith/ros2-ci-demo/install/my_ci_demo/lib/python3.12/site-packages/my_ci_demo
+[0.629s] byte-compiling /home/ajith/ros2-ci-demo/install/my_ci_demo/lib/python3.12/site-packages/my_ci_demo/math_utils.py to math_utils.cpython-312.pyc
+[0.629s] running install_data
+[0.629s] running install_egg_info
+[0.638s] removing '/home/ajith/ros2-ci-demo/install/my_ci_demo/lib/python3.12/site-packages/my_ci_demo-0.0.0-py3.12.egg-info' (and everything under it)
+[0.639s] Copying ../../build/my_ci_demo/my_ci_demo.egg-info to /home/ajith/ros2-ci-demo/install/my_ci_demo/lib/python3.12/site-packages/my_ci_demo-0.0.0-py3.12.egg-info
+[0.639s] running install_scripts
+[0.708s] writing list of installed files to '/home/ajith/ros2-ci-demo/build/my_ci_demo/install.log'
+[0.724s] Invoked command in '/home/ajith/ros2-ci-demo/src/my_ci_demo' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ajith/ros2-ci-demo/build/my_ci_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ajith/ros2-ci-demo/install/my_ci_demo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_ci_demo build --build-base /home/ajith/ros2-ci-demo/build/my_ci_demo/build install --record /home/ajith/ros2-ci-demo/build/my_ci_demo/install.log --single-version-externally-managed install_data
